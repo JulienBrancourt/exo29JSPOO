@@ -1,0 +1,102 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    width: 90%;
+    margin: 20px auto;
+}
+
+h2{
+    margin: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 1px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border:  1px solid black;
+
+}
+
+th{
+    background-color: #303133;
+    color: white;
+    padding: 5px;
+    height: 40px;
+}
+
+
+
+td {
+    text-align: center;
+    border:  1px solid black;
+    height: 50px;
+
+}
+
+form {
+    width: 100%;
+    margin: 1px;
+    
+
+}
+
+.ajout{
+    border: 1px solid gray;
+}
+
+form div {
+    margin: 5px 5px;
+}
+
+.genre {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.genre input {
+    margin-right: 7px;
+}
+
+.genre label {
+    margin-right: 20px;
+}
+
+#nom, #prenom {
+    width: calc(100%/2 - 2px);
+}
+
+#dateNaissance, #telephone, #email {
+    width: calc(100%/3 - 3px);
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: green;
+    transition: all 0.3s ease-in;
+}
+
+button:hover {
+    background-color: rgb(20, 170, 128);
+    border: green;
+}
+
+input {
+    height: 25px;
+}

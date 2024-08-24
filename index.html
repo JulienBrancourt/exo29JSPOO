@@ -5,28 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exo 29</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js" defer></script>
 </head>
 <body>
     <h1>Exo 29 - Liste de contacts</h1>
-    <br>
     <hr>
-    <h2>Liste de contacts</h2>
-    <table>
+    <section class="liste">
+        <h2>Liste de contacts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Date de Naissance</th>
+                    <th>Telephone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
 
-    </table>
+    <section class="ajout">
+        <h2>Ajouter Contact</h2>
+        <form action="#" id="formulaire">
+            <div class="genre">
+                <input type="radio" id="Mr" value="Mr" name="genre">
+                <label for="Mr">Mr</label>
+                <input type="radio" id="Mme" value="Mme" name="genre">
+                <label for="Mme">Mme</label>
+            </div>
 
-    <h2>Ajouter Contact</h2>
-    <form action="#" id="formulaire">
-        <div class="genre">
-            <input type="radio" id="Mr">
-            <label for="Mr">Mr</label>
-        </div>
-        <div class="genre">
-            <input type="radio" id="Mme">
-            <label for="Mme">Mme</label>
-        </div>
-        
-    </form>
+            <div class="b">
+                <!-- <label for="nom">Nom :</label> -->
+                <input type="text" id="nom" name="nom" placeholder="Nom">
+                <!-- <label for="prenom">Prénom :</label> -->
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+            </div>
+            <div class="c">
+                <!-- <label for="dateNaissance">Date de Naissance :</label> -->
+                <input type="date" id="dateNaissance" name="dateNaissance">
+                <!-- <label for="telephone">Téléphone :</label> -->
+                <input type="text" id="telephone" name="telephone" placeholder="Telephone">
+                <!-- <label for="email">Email :</label> -->
+                <input type="text" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="d">
+                <button type="submit">Ajouter</button>
+            </div >
+        </form>
+    </section>
+
 </body>
 </html>
